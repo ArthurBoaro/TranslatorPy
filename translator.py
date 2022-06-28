@@ -15,8 +15,8 @@ def translate(text):
     req_dict = req.json()
     res_data = req_dict['responseData']
     translated_text = res_data['translatedText']
-    print(translated_text)
+    print("The translated text is: " + translated_text)
 
 if (__name__ == "__main__"):
-    text = input()
+    text = input("Enter the text to translate: ")
     translate(text)
